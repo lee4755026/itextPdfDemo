@@ -1,0 +1,318 @@
+<html>
+ <head> 
+  <title>罪犯奖励审批表</title> 
+  <style>
+        body {
+            text-align: center;
+            line-height: 25px;
+            background-color:white !important;
+        }
+        /*@page {
+            size: A4;
+            margin: 0;
+        }*/
+        .main {
+            margin: 100px auto 20px auto;
+            width: 210mm;
+            page-break-inside: avoid;
+            padding-left: 2cm;
+            padding-right: 50px;
+        }
+
+        .main table {
+            /*border: 0;*/
+            margin: 0;
+            border-collapse: collapse;
+            border-spacing: 0;
+            width: 80%;
+            /*max-width: 100%;*/
+            border: 1px solid #000;
+        }
+
+        .main table td {
+            padding: 6px;
+            font: 16pt "SimSun";
+            border: 1px solid black;
+            text-align: center;
+            color: black;
+            line-height: 30px;
+        }
+
+        .main table th {
+            padding: 2px;
+            /*height: 40px;*/
+            font: 16pt "SimSun";
+            line-height: 20px;
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        .title {
+            font: 24pt 'SimSun';
+            text-align: center;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            /*font-weight: bold;*/
+            color: black;
+            letter-spacing: 3px;
+        }
+
+        .organ {
+            margin-top: 10px;
+            margin-bottom: 5px;
+            width: 100%;
+            font: 14pt 'SimSun';
+            color: black;
+        }
+
+        .reason {
+            min-height: 80px;
+            font-size: 11pt;
+            text-align: left;
+            padding-top: 0px;
+            text-indent: 2em;
+            line-height: 1.3;
+        }
+
+        .info-label {
+            font-size: 14pt;
+            width: 20%;
+        }
+
+        .info-text {
+            font-size: 14pt;
+            width: 30%;
+        }
+
+        .opinion-label {
+            font-size: 12pt;
+            width: 8%;
+        }
+
+        .opinion-container {
+            width: 40%;
+        }
+
+        .opinion-content {
+            /*max-width: 50%;*/
+            /*float: left;*/
+            font-size: 12pt;
+            text-align: left;
+            padding-top: 5px;
+            text-indent: 2em;
+            line-height: 25px;
+            height: 110px;
+        }
+
+        .line-date {
+            text-align: right;
+            padding-bottom: 5px;
+            padding-right: 20px;
+        }
+
+        #charge {
+            width: 12%;
+            /*height:42px;*/
+            height: 100%;
+            line-height: 15px;
+            padding: 0px;
+        }
+
+        #charge-tex {
+            min-width: 33%;
+            display: inline-block;
+            font-size: 4.5pt;
+            margin: 0;
+        }
+
+        .charge {
+            width: 12%;
+            /*height:42px;*/
+            height: 100%;
+            line-height: 15px;
+            padding: 0px;
+        }
+
+        .charge-tex {
+            min-width: 33%;
+            display: inline-block;
+            font-size: 4.5pt;
+            margin: 0;
+        }
+    </style> 
+ </head> 
+ <body> 
+  <div> 
+   <div id="main" class="main" data-id="97702156603020473"> 
+    <div class="title">
+     罪犯行政奖励审批表
+    </div> 
+    <div class="organ"> 
+     <span style="width: 40%;display: inline-block;text-align: left;">三监区二分监区</span> 
+     <span style="width: 10%;display: inline-block;"></span> 
+     <span style="width: 0%;display: inline-block;"></span> 
+     <span style="width: 40%;display: inline-block;text-align: right;">填表时间: <input id="fill_date" value="2018年07月19日" /> </span> 
+    </div> 
+    <table id="simple_table" border="1" class="table" style="border-collapse:collapse;text-align: center;font: 12pt/20px SimSun;border:1px solid black;"> 
+     <tbody>
+      <tr> 
+       <td class="info-label" colspan="2">姓名</td> 
+       <td class="info-text" colspan="2">宁广炎</td> 
+       <td class="info-label" colspan="2">罪犯编号</td> 
+       <td class="info-text" colspan="2">4501008556</td> 
+      </tr> 
+      <tr> 
+       <td class="info-label" colspan="2">罪名</td> 
+       <td class="charge" colspan="2" id="charge"> <p class="charge-tex" id="charge-tex" style="zoom: 3.01282;">贩卖毒品</p> </td> 
+       <td class="" colspan="2" rowspan="2" style="padding: 0px;"> 
+        <table style="height: 100%;width:100%;border: 0px;"> 
+         <tbody>
+          <tr> 
+           <td rowspan="2" style="border: 0px;">刑<br />期</td> 
+           <td style="border-top:0px;border-right: 0px;">原判刑期</td> 
+          </tr> 
+          <tr>
+           <td style="border-bottom:0px;border-right: 0px;">余刑</td>
+          </tr> 
+         </tbody>
+        </table> </td> 
+       <!--原判刑期--> 
+       <td class="info-text" colspan="2"> 7年 </td> 
+      </tr> 
+      <tr> 
+       <td class="info-label" colspan="2">入监日期</td> 
+       <td class="info-text" colspan="2">2016年03月08日</td> 
+       <!--余刑--> 
+       <td class="info-text" colspan="2"> <input id="remain_term" class="input-edit" name="remainTerm" value="4年2个月25天" autocomplete="off" /> </td> 
+      </tr> 
+      <tr> 
+       <td class="info-label" colspan="2">劳动岗位</td> 
+       <td class="info-text" colspan="2"><input name="" class="input-edit" value="" autocomplete="off" /></td> 
+       <td class="info-label" colspan="2">等级</td> 
+       <td class="info-text" colspan="2"><input name="" class="input-edit" value=" " autocomplete="off" /></td> 
+      </tr> 
+      <tr> 
+       <td style="width:20%;" colspan="2">事项</td> 
+       <td style="width:30%;" colspan="2"> 表扬 </td> 
+       <td style="width:20%;" colspan="2">分类</td> 
+       <td style="width:30%;" colspan="2">行政奖励</td> 
+      </tr> 
+      <tr> 
+       <td style="width: 20%;" colspan="2">考核积分</td> 
+       <td colspan="6" style="text-align: left;text-indent: 2em;"> 
+        <div class="reason" contenteditable="true">
+          本考核周期为5个月,从2018年02月到2018年06月,教育改造累积分308分,劳动改造累积分211分, 上一周期剩余积分85分, 其他处罚扣分135分, 其他135分, 本周期内累计考核分604分。 
+        </div> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2">认定理由</td> 
+       <td colspan="6"> 
+        <div class="reason" style="min-height: 40px;" contenteditable="true">
+          考核积分满600分，在考核周期内，教育改造、劳动改造得分分别不低于其考核周期基础分的60%，给予表扬一次。 
+        </div> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="2">考核依据</td> 
+       <td colspan="6"> 
+        <div class="rule-text" contenteditable="true">
+          《广西壮族自治区计分考核罪犯实施细则（试行）》第四章第三十条 
+        </div> </td> 
+      </tr> 
+      <tr> 
+       <td colspan="8">审核意见</td> 
+      </tr> 
+      <tr> 
+       <td class="opinion-label" style="height:300px;">分监区计分考核小组意见</td> 
+       <td colspan="3" class="opinion-container"> 
+        <div class="opinion-content" contenteditable="true">
+          该犯 宁广炎 情况属实，经分监区计分考核小组讨论，建议给予 表扬 ，呈监区计分考核小组审批。 
+        </div> 
+        <div style="margin-right: 30px;">
+          签名: 
+        </div> 
+        <!--<div class="line-date" contenteditable="true">
+                                &#160;&#160;年&#160;&#160;月&#160;&#160;日
+                            </div>--> 
+        <div style="position: absolute"> 
+         <div id="pos_sub_area"></div> 
+        </div> </td> 
+       <td class="opinion-label">监区计分考核管理小组意见</td> 
+       <td colspan="3" class="opinion-container"> 
+        <div class="opinion-content" contenteditable="true">
+          该犯 宁广炎 情况属实，经监区计分考核管理小组讨论，建议给予 表扬 ，呈监狱计分考核领导小组办公室审批。 
+        </div> 
+        <div style="margin-right: 30px;">
+          签名: 
+        </div> 
+        <!--<div class="line-date" contenteditable="true">
+                                &#160;&#160;年&#160;&#160;月&#160;&#160;日
+                            </div>--> 
+        <div style="position: absolute"> 
+         <div id="pos_area"></div> 
+         <div class="kg-img-div kg-img-div-pos_area kg-default" id="kg-img-div-154458628186591829-pos_area" elemid="pos_area" signatureid="154458628186591829" style="width: 121px; height: 91px; top: 0px; left: 0px; margin-left: 150px; margin-top: -80px;">
+          <img src="data:image/.gif;base64,iVBORw0KGgoAAAANSUhEUgAAAp4AAAEsCAYAAABqnLNwAAAgAElEQVR4Xu3dCfAtV10n8K+gSUhIgBhZAgSysYdhNYKjAwzMghhcQIhhk3XYHNCytEqrtLRKSscpRhQQQZAdHUARdRQRBEd0AqgUi2AW2UOAJGYDgizWL9MXro/33u2+S99ePl31r7f8T/c553P6/e/3dfc5/U2xESBAgAABAgQIEOhB4Jt6qEMVBAgQIECAAAECBCJ4OgkIECBAgAABAgR6ERA8e2FWCQECBAgQIECAgODpHCBAgAABAgQIEOhFQPDshVklBAgQIECAAAECgqdzgAABAgQIECBAoBcBwbMXZpUQIECAAAECBAgIns4BAgQIECBAgACBXgQEz16YVUKAAAECBAgQICB4OgcIECBAgAABAgR6ERA8e2FWCQECBAgQIECAgODpHCBAgAABAgQIEOhFQPDshVklBAgQIECAAAECgqdzgAABAgQIECBAoBcBwbMXZpUQIECAAAECBAgIns4BAgQIECBAgACBXgQEz16YVUKAAAECBAgQICB4OgcIECBAgAABAgR6ERA8e2FWCQECBAgQIECAgODpHCBAgAABAgQIEOhFQPDshVklBAgQIECAAAECgqdzgAABAgQIECBAoBcBwbMXZpUQIECAAAECBAgIns4BAgQIECBAgACBXgQEz16YVUKAAAECBAgQICB4OgcIECBAgAABAgR6ERA8e2FWCQECBAgQIECAgODpHCBAgAABAgQIEOhFQPDshVklBAgQIECAAAECgqdzgAABAgQIECBAoBcBwbMXZpUQIECAAAECBAgIns4BAgQIECBAgACBXgQEz16YVUKAAAECBAgQICB4OgcIECBAgAABAgR6ERA8e2FWCQECBAgQIECAgODpHCBAgAABAgQIEOhFQPDshVklBAgQIECAAAECgqdzgAABAgQIECBAoBcBwbMXZpUQIECAAAECBAgIns4BAgQIECBAgACBXgQEz16YVUKAAAECBAgQICB4OgcIECBAgAABAgR6ERA8e2FWCQECBAgQIECAgODpHCBAgAABAgQIEOhFQPDshVklBAgQIECAAAECgqdzgAABAgQIECBAoBcBwbMXZpUQIECAAAECBAgIns4BAgQIECBAgACBXgQEz16YVUKAAAECBAgQICB4OgcIECBAgAABAgR6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" class="kg-img" id="kg-img-154458628186591829" style="width: 121px; height: 91px;" />
+          <div class="kg-date" style="width: 121px; height: 91px; top: 0px; left: 0px;">
+           <div class="kg-date-tmb" style="width: 121px; bottom: 0px;">
+            <div class="kg-date-lcr" style="text-align: center; font-family: 宋体; font-size: 14px; color: black;">
+             2018年12月12日
+            </div>
+           </div>
+          </div>
+          <div class="kgImgIcons kg-img-icons">
+           <a href="#" title="签章验证" class="kg-img-icon" id="kg-img-icon-signatureInfo-154458628186591829"><i class="kg-icon-sealinfo"></i></a>
+           <a href="#" title="数字签名" class="kg-img-icon" id="kg-img-icon-sign-154458628186591829"><i class="kg-icon-sign"></i></a>
+           <a href="#" title="撤销签章" class="kg-img-icon" id="kg-img-icon-revokeSignature-154458628186591829"><i class="kg-icon-remove"></i></a>
+           <a href="#" title="移动签章" class="kg-img-icon" id="kg-img-icon-moveSignature-154458628186591829"><i class="kg-icon-move"></i></a>
+          </div>
+          <div class="kg-shade">
+           <canvas height="91" width="121"></canvas>
+          </div>
+          <div class="kg-hide kg-invalid" style="top: 30.3333px; height: 30.3333px;">
+           <div class="kg-invalid-item" style="height: 10.1111px;">
+            <canvas height="10" width="121"></canvas>
+           </div>
+           <div style="height: 10.1111px;"></div>
+           <div class="kg-invalid-item" style="height: 10.1111px;">
+            <canvas height="10" width="121"></canvas>
+           </div>
+          </div>
+         </div>
+        </div> </td> 
+      </tr> 
+      <tr> 
+       <td class="opinion-label" style="height:300px;">监狱计分考核领导小组办公室意见</td> 
+       <!--class="opinion-container"--> 
+       <td colspan="3"> 
+        <div class="opinion-content" contenteditable="true">
+          经监狱计分考核领导小组办公室审核，拟同意给予 表扬 。 
+        </div> 
+        <div style="margin-right: 30px;">
+          签名: 
+        </div> 
+        <!--<div class="line-date" contenteditable="true">
+                                &#160;&#160;年&#160;&#160;月&#160;&#160;日
+                            </div>--> 
+        <div style="position: absolute"> 
+         <div id="pos_office"></div> 
+        </div> </td> 
+       <td class="opinion-label">监狱分管领导意见</td> 
+       <td colspan="3" class="opinion-container"> 
+        <div class="opinion-content opinion-agree" contenteditable="true">
+         同意
+        </div> 
+        <div style="margin-right: 30px;">
+          签名: 
+        </div> 
+        <!--<div class="line-date" contenteditable="true">
+                                &#160;&#160;年&#160;&#160;月&#160;&#160;日
+                            </div>--> 
+        <div style="position: absolute"> 
+         <div id="pos_deputy_leader"></div> 
+        </div> </td> 
+      </tr> 
+     </tbody>
+    </table> 
+   </div> 
+  </div>  
+ </body>
+</html>
